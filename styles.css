@@ -20,7 +20,7 @@ h1{
 h2{
     font-family: "Playfair Display", serif;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 400;
     color: #000;
 }
 h3{
@@ -84,11 +84,50 @@ main{
     margin: 0% 15%;
     padding: 20px;
     margin-top: 400px;
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
 }
 
+
+main section img{
+    z-index: -1;
+    position: absolute;
+    margin: 25px 0;
+}
+
+
+.overskrift{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overskrift img{
+    z-index: -1;
+    position: absolute;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.content section{
+    padding: 50px;
+}
+
+.halv-halv{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+.halv-halv img{
+    width: 50%;
+}
+.halv-halv section {
+    padding: 50px;
+    width: 50%;
+}
 
 
 footer  {
