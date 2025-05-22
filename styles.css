@@ -22,11 +22,12 @@ h2{
     font-size: 1.2rem;
     font-weight: 400;
     color: #000;
+    padding-bottom: 20px;
 }
 h3{
     font-family: "Playfair Display", serif;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 400;
     color: #000;
 }
 
@@ -84,6 +85,9 @@ main{
     margin: 0% 15%;
     padding: 20px;
     margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -103,6 +107,14 @@ main section img{
 .overskrift img{
     z-index: -1;
     position: absolute;
+}
+
+.underoverskrift{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
 }
 
 .content{
@@ -129,6 +141,19 @@ main section img{
     width: 50%;
 }
 
+
+.info{
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px;
+}
+
+.linje{
+    border-left: 2px solid #000;
+    height: 70px;
+    margin: 50px 50%
+}
 
 footer  {
     margin: 0;
