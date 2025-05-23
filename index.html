@@ -17,6 +17,7 @@
 
 <body>
     <header>
+        <link rel="stylesheet" href="header-footer.css">
         <a href="#"><img src="img/logo.png" alt="Havblink logo"> </a>
         <nav>
             <ul>
@@ -26,9 +27,23 @@
                 <li><a href="#">Shop</a></li>
             </ul>
         </nav>
+
+        <div class="dropdown">
+            <input type="checkbox" id="my-dropdown" value="" name="my-checkbox">
+            <label for="my-dropdown"
+               data-toggle="dropdown">
+               <img src="img/burger.svg" alt="menu">
+            </label>
+            <ul>
+              <li><a href="#">Vores vin</a></li>
+              <li><a href="#">Vingården</a></li>
+              <li><a href="#">Mad og vin</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </div>
     </header>
 
-<div class="hero-image">
+<div class="hero-image" >
     <img src="img/index-hero.jpg" alt="hero-image">
 </div>
 
@@ -52,6 +67,7 @@
 
 
 <footer>
+    <link rel="stylesheet" href="header-footer.css">
     <img src="img/footer-web.svg" alt="footer">
     <div class="footer-text">
         <section>

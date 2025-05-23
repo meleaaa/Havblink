@@ -17,15 +17,31 @@
 
 <body>
     <header>
+        <link rel="stylesheet" href="header-footer.css">
         <a href="#"><img src="img/logo.png" alt="Havblink logo"> </a>
         <nav>
             <ul>
                 <li><a href="#">Vores vin</a></li>
                 <li><a href="#">Vingården</a></li>
-                <li><a href="#">Mad og vin</a></li>
+                <li><a class="active" href="#">Mad og vin</a></li>
                 <li><a href="#">Shop</a></li>
             </ul>
         </nav>
+
+
+        <div class="dropdown">
+            <input type="checkbox" id="my-dropdown" value="" name="my-checkbox">
+            <label for="my-dropdown"
+               data-toggle="dropdown">
+            <img src="img/burger.svg" alt="menu">
+            </label>
+            <ul>
+              <li><a href="#">Vores vin</a></li>
+              <li><a href="#">Vingården</a></li>
+              <li><a href="#">Mad og vin</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </div>
     </header>
 
     <div class="hero-image">
@@ -42,13 +58,84 @@
       <p>Gør dine måltider ekstraordinære med de perfekte vinanbefalinger</p>
      </div>  
 
+<h2>Anbefalinger</h2>
 
+<div class="vinanbefalinger">
+
+
+    <div>
+        <img src="img/dessert.jpg" alt="">
+        <h3>Solaris dessertvin</h3>
+        <p>Sød vin til desserter</p>
+    </div>
+
+    <div>
+        <img src="img/mousserende.jpg" alt="">
+        <h3>Solaris mousserende vin</h3>
+        <p>Boblende og frisk vin</p>
+    </div>
+
+    <div>
+        <img src="img/klassisk-solaris.jpg" alt="">
+        <h3>Klassisk Solaris</h3>
+        <p>Den klassiske lette og syrlige hvidvin</p>
+    </div>
+
+    <div>
+        <img src="img/solaris-eg.jpg" alt="">
+        <h3>Solaris-Eg</h3>
+        <p>Hvidvin lagret på egetræsfad</p>
+    </div>
+
+    <div>
+        <img src="img/orange.jpg" alt="">
+        <h3>Solaris Orangevin</h3>
+        <p>Hvidvin dyrket med druens skal</p>
+    </div>
+
+</div>
+
+<div class="linje"></div>
+
+<h2>Mad parringer</h2>
+<div class="underoverskrift">
+    <p>Find den perfekte vin til din madret</p> 
+</div>
+
+<div class="madpar">
+    <div>
+        <img src="img/muslinger.jpg" alt="">
+        <h3>mad</h3>
+        <button>læs mere</button>
+    </div>
+
+    <div>
+        <img src="img/muslinger.jpg" alt="">
+        <h3>mad</h3>
+        <button>læs mere</button>
+    </div>
+
+    <div>
+        <img src="img/muslinger.jpg" alt="">
+        <h3>mad</h3>
+        <button>læs mere</button>
+    </div>
+
+    <div>
+        <img src="img/muslinger.jpg" alt="">
+        <h3>mad</h3>
+        <button>læs mere</button>
+    </div>
+
+
+</div>
 
 
 </main>
 
 
     <footer>
+        <link rel="stylesheet" href="header-footer.css">
         <img src="img/footer-web.svg" alt="footer">
         <div class="footer-text">
             <section>
