@@ -87,7 +87,7 @@ main section img{
     padding: 50px;
 }
 
-.halv-halv{
+.halv-halv, .halv-halv-omvendt{
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -95,12 +95,27 @@ main section img{
     margin-bottom: 100px;
     overflow: hidden;
 }
-.halv-halv img{
-    width: 50%;
-}
-.halv-halv section {
+
+.halv-halv section, .halv-halv-omvendt section{
     padding: 50px;
     width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.halv-halv img, .halv-halv-omvendt img{
+    width: 50%;
+    object-fit: cover;
+}
+
+.halv-halv section button, .halv-halv-omvendt section button{
+    margin-top: 20px;
+}
+
+.halv-halv section h2, .halv-halv-omvendt section h2{
+    align-self: flex-start;
+    padding: 0;
 }
 
 
@@ -154,6 +169,9 @@ button{
     cursor: pointer;
     font-family: "playfair display", serif;
 }
+button:hover{
+    color: white;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -173,11 +191,19 @@ main{
 .halv-halv{
     flex-direction: column;
 }
-.halv-halv img{
-    width: 100%;
+
+.halv-halv section, .halv-halv-omvendt section{
+    padding: 20px 50px;
+    width: auto;
+    text-align: left;
 }
-.halv-halv section {
-    width: 100%;
+
+.halv-halv-omvendt{
+    flex-direction: column-reverse;
+}
+
+.halv-halv img, .halv-halv-omvendt img{
+    width: auto;
 }
 
 .vinanbefalinger {
