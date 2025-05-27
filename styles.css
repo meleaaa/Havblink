@@ -45,17 +45,10 @@ h3{
 main{
     margin: 0% 15%;
     padding: 20px;
-    margin-top: 30%;
+    margin-top: 25%;
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-
-
-main section img{
-    z-index: -1;
-    position: absolute;
-    margin: 25px 0;
 }
 
 
@@ -82,9 +75,25 @@ main section img{
 .content{
     display: flex;
     flex-direction: row;
+    padding: 50px 0;
+}
+.content img{
+    padding: 25px;
+    
 }
 .content section{
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.content section p{
+    padding: 25px;
+}
+
+.content section img{
+    z-index: -1;
+    position: absolute;
+    margin: 90px 0;
+    padding: 0;
 }
 
 .halv-halv, .halv-halv-omvendt{
@@ -161,6 +170,7 @@ float: right;
     border-radius: 20px;
     padding: 20px;
     text-align: left;
+    cursor: pointer;
 }
 
 .madpar{
@@ -168,7 +178,10 @@ float: right;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 100px;
+}
+
+.madpar > div{
+margin: 20px;
 }
 
 .madpar img{
@@ -233,5 +246,15 @@ main{
 .info section img{
     padding: 10px 50px;
     float: none;
+}
+
+
+.madpar > div {
+   width: 40%;
+   margin: 10px;
+
+}
+.madpar img{
+    width: 100%;
 }
 }

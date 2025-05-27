@@ -58,10 +58,13 @@ footer  {
     bottom: 0;
 }
 
-footer img{
+.web-footer{
     width: 100%;
     z-index: -1;
     position: absolute;
+}
+.mobil-footer{
+    display: none;
 }
 
 .footer-text{
@@ -102,8 +105,18 @@ footer a{
     .footer-text{
         display: flex;
         flex-wrap: wrap;
-        background-color: #C2D85C;
+        padding-top: 100px;
     }
+.web-footer{
+    display: none;
+}
+.mobil-footer{
+    display: block;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+}
+
 
 
     .dropdown > label,
