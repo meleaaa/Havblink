@@ -89,18 +89,12 @@ footer a{
 
 
 @media screen and (max-width: 768px) {
-    header nav {
-        display: none;}
-    .dropdown{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5px;
-    }
-    
     header  {
         justify-content: space-between;
         
+    }
+    header nav{
+        display: none;
     }
     .footer-text{
         display: flex;
@@ -117,73 +111,81 @@ footer a{
         position: absolute;
 }
 
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
 
 
-    .dropdown > label,
+.dropdown > label,
 .dropdown > a[role="button"] {
-  display: inline-block;
-  padding: 6px 15px;
-  color: #000000;
-  line-height: 1.5em;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  z-index: 1001;
+display: block;
+padding: 6px 15px;
+cursor: pointer;
+z-index: 1001;
 }
 
 .dropdown > ul {
-    position: absolute;
-    z-index: 1000;
-    display: block;
-    left: -100vw;
-    top: 0;
-    background: rgba(216, 155, 74, 0.9);
-    padding: 20px 0;
-    padding-top: 80px;
-    margin: 0;
-    list-style: none;
-    width: 100%;
-    text-align: right;
-    font-size: 16px;
+position: absolute;
+z-index: 1000;
+display: block;
+left: -100vw;
+top: 0;
+background: rgba(216, 155, 74, 0.9);
+padding: 20px 0;
+padding-top: 80px;
+margin: 0;
+list-style: none;
+width: 100%;
+text-align: right;
+font-size: 16px;
 
-  }
-  .dropdown > ul a {
-    display: block;
-    padding: 20px 15px;
-    text-decoration: none;
-    color: #000000;
-  }
+}
+.dropdown > ul a {
+display: block;
+padding: 20px 15px;
+text-decoration: none;
+color: #000000;
+}
 
-  .dropdown > ul a:hover,
+.dropdown > ul a:hover,
 .dropdown > ul a:focus {
-  background: #5ed843;
+background-image: url(img/hover.svg);
+background-repeat: no-repeat;
+background-position: right;
 }
 
 /*gør menuen synlig når man klikker*/
 .dropdown > input[type="checkbox"]:checked ~ ul,
 .dropdown > ul:target {
-  left: 0;
+left: 0;
 }
 
 /*fjerner checkbox*/
 .dropdown > input[type="checkbox"] {
-    display: none;
-  }
-  
-  .dropdown a.close {
-    display: none;
-  }
-  
-  .dropdown > ul:target ~ a.close {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    text-indent: -100vw;
-    z-index: 1000;
-  }
+display: none;
+}
+
+/*lav burger til kryds*/
+.dropdown label div{
+    background-color: #000;
+    height: 2px;
+    width: 35px;
+    margin: 8px auto;
+}
+.dropdown > input[type="checkbox"]:checked ~ label div:nth-child(1) {
+    transform: rotate(45deg) translateY(14px);
+    transition: transform 0.3s ease-out;
+
+}
+.dropdown > input[type="checkbox"]:checked ~ label div:nth-child(2) {
+    opacity: 0;
+}
+.dropdown > input[type="checkbox"]:checked ~ label div:nth-child(3) {
+    transform: rotate(-45deg) translateY(-14px);
+    transition: transform 0.3s ease-out;
+}
+
 }
