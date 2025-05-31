@@ -43,7 +43,7 @@ h3{
 }
 
 main{
-    margin: 0% 15%;
+    margin: 0% 15%; /*for at have whitespace i siderne*/
     padding: 20px;
     margin-top: 25%;
     display: flex;
@@ -103,7 +103,7 @@ main{
     background-color: white;
     border-radius: 20px;
     margin-bottom: 100px;
-    overflow: hidden;
+    overflow: hidden; /*så billedets hjørner følger border-radius*/
 }
 
 .halv-halv section, .halv-halv-omvendt section{
@@ -120,7 +120,7 @@ main{
 }
 
 .halv-halv section button, .halv-halv-omvendt section button{
-    margin-top: 20px;
+    margin-top: 20px; /*ekstra whitespace*/
 }
 
 .halv-halv section h2, .halv-halv-omvendt section h2{
@@ -149,7 +149,7 @@ main{
 
 .info section img{
 padding: 0px 20px;
-float: right;
+float: right; /*så billedet er til højre for teksten, og teksten brydes om billedet*/
 }
 
 .linje{
@@ -229,17 +229,20 @@ main{
 }
 
 .halv-halv-omvendt{
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; /*så billedet kommer før teksten*/
 }
 
 .halv-halv img, .halv-halv-omvendt img{
     width: auto;
 }
 
+
 .vinanbefalinger {
     justify-content: center;
 
 }
+
+
 .info{
     padding: 50px;
 }
